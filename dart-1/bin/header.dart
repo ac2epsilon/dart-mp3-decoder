@@ -1,8 +1,9 @@
 import 'dart:typed_data';
-
 import './header.h.dart';
 
 class Header {
+  static int bitz(int byte, int mask, int shift) => (byte & mask) >> shift;
+
   final Uint8List bytes; // byte array of whole file
   final int frame; // offset in array
 // byte +1
@@ -24,8 +25,6 @@ class Header {
   int get copyright => bitz(bytes[frame + 3], 0x08 /*0000 1000*/, 3);
   int get origHome => bitz(bytes[frame + 3], 0x04 /*0000 0100*/, 2);
   int get emphasis => bitz(bytes[frame + 3], 0x03 /*0000 0011*/, 0);
-
-  static int bitz(int byte, int mask, int shift) => (byte & mask) >> shift;
 
   bool valid() {
     if (layer == 0) return false; // 00 is reserved value
