@@ -1,7 +1,5 @@
-import 'dart:convert';
 import 'dart:io';
 import 'constants.dart' as constants;
-import 'package:http/http.dart' as http;
 
 void main() {
   fetch2(someUrl) async {

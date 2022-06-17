@@ -10,15 +10,6 @@ const bitrates = [
   [0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320, -1],
 ];
 
-const ids = ['MPEG-II 2.5', 'Reserved', 'MPEG-II', 'MPEG-I'];
-
-const layers = [
-  'Reserved',
-  'Layer III',
-  'Layer II',
-  'Layer I',
-];
-
 const samplings = [
   [11025, 12000, 8000], // id == 00, II.5
   [-1, -1, -1], // id == 01, no such thing
