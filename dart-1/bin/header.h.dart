@@ -11,15 +11,8 @@ const bitrates = [
 ];
 
 const samplings = [
-  [11025, 12000, 8000], // id == 00, II.5
+  [11.025, 12.000, 8.000], // id == 00, II.5
   [-1, -1, -1], // id == 01, no such thing
-  [22050, 24000, 16000], // id == 10, II
-  [44100, 48000, 32000] // id == 11, I
+  [22.050, 24.000, 16.000], // id == 10, II
+  [44.100, 48.000, 32.000] // id == 11, I
 ];
-
-class Element {
-  String field;
-  num value;
-  String legend;
-  Element(this.field, this.value, this.legend);
-}
