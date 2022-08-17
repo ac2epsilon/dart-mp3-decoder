@@ -43,6 +43,8 @@ extension Formatting on Header {
 - - - - - - - - - - - - -
 OFFSET $frame $hexVal
 - - - - - - - - - - - - -""");
-    hdrs.forEach((el) => print("${el.field} = ${el.value} = ${el.legend}"));
+    for (var el in hdrs) {
+      print("${el.field} = ${el.value} = ${el.legend}");
+    }
   }
 }
