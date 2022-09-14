@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'constants.dart' as constants;
+import '../../constants.dart' as constants;
 
 void main() {
   fetch2(someUrl) async {

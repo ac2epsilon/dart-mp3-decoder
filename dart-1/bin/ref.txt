@@ -1,0 +1,32 @@
+
+SUMMARY: brown.mp3
+    version                       MPEG v1.0
+    layer                         3
+    bitrate                       64000 bps
+    samplerate                    44100 Hz
+    frames                        121787
+    time                          53:01.374
+    unidentified                  0 b (0%)
+    errors                        none
+    result                        Ok
+
+    SUMMARY: brown.mp3
+    version                       MPEG v1.0
+    layer                         3
+    bitrate                       64000 bps
+    samplerate                    44100 Hz
+    frames                        121787
+    time                          53:01.374
+    unidentified                  0 b (0%)
+    stereo                        no
+    size                          24926 KiB
+    ID3V1                         yes
+    ID3V2                         yes
+        size                      73107 B
+    APEV1                         no
+    APEV2                         no
+    last frame                    
+        offset                    25523904 b (0x18576c0)
+        length                    209
+    errors                        none
+    result                        Ok

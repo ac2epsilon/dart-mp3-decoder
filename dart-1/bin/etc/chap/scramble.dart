@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'dart:convert';
 import 'package:html/parser.dart' show parse;
-import 'chap/chap.dart';
-import 'constants.dart' as constants;
+import '../chap/chap.dart';
+import '../../constants.dart' as constants;
 
 void main() {
   String file1 = constants.file1;
