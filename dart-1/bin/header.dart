@@ -53,7 +53,7 @@ class Header {
   }
 
   int get cfFrametime {
-    return (1000 * cfSamples / cfSampleRate).floor();
+    return (1000 * cfSamples ~/ cfSampleRate);
   }
 // ---
 

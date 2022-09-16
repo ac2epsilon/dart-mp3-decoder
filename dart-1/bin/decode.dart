@@ -4,6 +4,7 @@ import 'package:collection/collection.dart';
 import 'constants.dart' as constants;
 import 'header.dart';
 import 'header.ext.dart';
+import 'redat.dart';
 
 const String file1 = constants.brownMp3;
 const String file2 = constants.decfile;
@@ -41,4 +42,13 @@ void main(List<String> args) {
     }
   }
   print("valid ${h.length}");
+  var msframe = h[0].cfFrametime;
+
+  var data = readDat();
+  int cnt = 0;
+  for (var el in data) {
+    var f = [h[el.t1 ~/ msframe].frame, h[el.t2 ~/ msframe].frame];
+    Uint8List stream = bytes.sublist(f[0], f[1]);
+    File("sprite-${cnt++}.mp3").writeAsBytes(stream);
+  }
 }
