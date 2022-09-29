@@ -1,10 +1,6 @@
 import 'dart:io';
 import 'constants.dart' as constants;
 
-void main(List<String> args) {
-  readDat();
-}
-
 int t2ms(String time) {
   final sect = time.split('.');
   return (int.parse(sect[0]) * 60 + int.parse(sect[1])) * 1000 +
